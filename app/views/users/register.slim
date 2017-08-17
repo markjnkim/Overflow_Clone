@@ -1,6 +1,6 @@
 div class='container'
   h1 Register Account
-  = slim :'users/errors' if @errors && @errors.any?
+  == slim :'users/_errors' if @errors && @errors.any?
   form action='/register' method='post'
     label Username
     input type='text' name='user[username]'

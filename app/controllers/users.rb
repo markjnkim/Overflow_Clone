@@ -17,7 +17,7 @@ end
 
 # returning user
 get '/login' do
-  slim '/users/login'
+  slim :'/users/login'
 end
 
 post '/login' do
