@@ -4,6 +4,11 @@ p = @question.body
 ul
   - @question.answers.each do |answer|
     li = answer.text
+    - if @question.best_answer == answer
+      h3 Best Answer!
+    - if @question.user == current_user
+      form action="/questions/#{@question.id}/best_answer/#{answer.id}" method='post'
+        input type="submit" value="Vote Best Answer"
 
 - if logged_in?
   == slim :'answers/_new'
