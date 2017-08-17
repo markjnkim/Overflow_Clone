@@ -1,0 +1,9 @@
+div class='container'
+  h1 Sign In
+  == slim :'users/_errors' if @errors && @errors.any?
+  form action='/login' method='post'
+    label Username
+    input type='text' name='user[username]'
+    label Password
+    input type='password' name='user[password]'
+    input type='submit' value='Sign In'
