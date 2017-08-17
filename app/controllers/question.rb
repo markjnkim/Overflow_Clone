@@ -27,6 +27,13 @@ post '/questions' do
   end
 end
 
+post '/questions/:question_id/best_answer/:answer_id' do
+  question = Question.find(params[:question_id])
+  answer = Answer.find(params[:answer_id])
+  question.update(best_answer: answer)
+  redirect "/questions/#{question.id}"
+end
+
 #edit
 # get '/questions/:id/edit' do
 
