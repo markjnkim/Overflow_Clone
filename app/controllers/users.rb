@@ -1,15 +1,18 @@
-get '/users' do
+# new user
+get '/register' do
 end
 
-get '/users/new' do
+post '/register' do
 end
 
-post '/users' do
+# returning user
+get '/login' do
 end
 
+post '/login' do
+end
+
+# user profile
 get '/users/:id' do
 end
-
-
-
 

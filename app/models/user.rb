@@ -1,4 +1,8 @@
+require 'bcrypt'
+
 class User < ActiveRecord::Base
+  include BCrypt
+
   validates :username, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
 
@@ -21,5 +25,4 @@ class User < ActiveRecord::Base
     user = self.find_by(email: email)
     return user if user && user.password == plain_text_password
   end
-
 end
