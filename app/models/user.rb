@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
 
   validate :password_present
 
+  has_many :questions
+  has_many :answers
+
   def password_present
     @errors.add(:password, 'cannot be blank') if self.password == ''
   end
