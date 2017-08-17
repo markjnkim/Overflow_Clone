@@ -18,15 +18,12 @@ end
 
 #create
 post '/questions' do
-  # FOR TESTING
-  params[:question][:user_id] = 3
-  # USE WHEN USERS IS IMPLEMENTED
-  # question[:user] = current_user
+  params[:question][:user] = current_user
   @question = Question.create(params[:question])
   if @question.errors.any?
     slim :'question/_new'
   else
-    redirect "/questions/#{question.id}"
+    redirect "/questions/#{@question.id}"
   end
 end
 

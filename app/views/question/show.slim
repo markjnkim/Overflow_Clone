@@ -4,7 +4,7 @@ p = @question.body
 / USE WHEN ANSWERS IS IMPLEMENTED
 / ul
 /   - @question.answers.each do |answer|
-/     li == slim :'answers/_show'
+/     li = answer.text
 
 / USE WHEN USERS AND ANSWERS IS IMPLEMENTED
 / - if logged_in?
