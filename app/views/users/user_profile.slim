@@ -1,6 +1,9 @@
-h1 Welcome, = current_user.username
-/ div class='users_questions'
-/   - if current_user.questions.any?
-/     - current_user.questions.each do |question|
-/       li
-/         a href="/questions/="
+h1 = "Welcome, #{current_user.username}! (>^.^)> "
+div class='users-questions'
+  a id='new-question' href='/questions/new' New Question
+  - if current_user.questions.any?
+    h2 Your Questions:
+    - current_user.questions.each do |question|
+      li
+        a href="/questions/#{question.id}" = question.title
+

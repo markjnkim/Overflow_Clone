@@ -13,7 +13,7 @@ html
           a href='/questions' Questions
         - if logged_in?
           li
-            a href="/users/=#{current_user.id}" =current_user.username
+            a href="/users/#{current_user.id}" =current_user.username
           li
             form id='logout' action='/logout' method='post'
               input type='submit' value='Logout'
