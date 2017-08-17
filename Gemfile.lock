@@ -16,6 +16,8 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
     backports (3.8.0)
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     byebug (9.0.6)
     capybara (2.15.1)
       addressable
@@ -37,8 +39,11 @@ GEM
     mini_portile2 (2.2.0)
     minitest (5.10.3)
     multi_json (1.12.1)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
     nokogiri (1.8.0-x86-mingw32)
       mini_portile2 (~> 2.2.0)
+    pg (0.21.0)
     pg (0.21.0-x86-mingw32)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -82,7 +87,11 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
+    slim (3.0.8)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 1.3.3, < 2.1)
     slop (3.6.0)
+    temple (0.8.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
     tzinfo (1.2.3)
@@ -91,15 +100,18 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
   activerecord (~> 5.1.2)
   activesupport (~> 5.1.2)
+  bcrypt
   capybara
   factory_girl
   faker
   pg
+  pry
   pry-byebug
   rack-test
   rake
@@ -108,6 +120,7 @@ DEPENDENCIES
   shoulda-matchers
   sinatra (~> 1.0)
   sinatra-contrib
+  slim
 
 BUNDLED WITH
    1.15.3
