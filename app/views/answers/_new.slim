@@ -1,0 +1,8 @@
+- if @answer && @answer.errors.any?
+  == slim :'answers/_errors'
+form action="/questions/#{@question.id}/answers" method="post"
+  label Answer
+  input type="text" name="answer[text]"
+  input type="submit" value="Submit"
+
+
