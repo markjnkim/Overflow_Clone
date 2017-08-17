@@ -1,9 +1,8 @@
 ul
   - @questions.each do |question|
     li
-      / = question.answers.count
-      = question.title
+      / = "#{question.answers.count} answers"
+      a[href="/questions/#{question.id}"] = question.title
 
-/ USE WHEN USERS IS IMPLEMENTED
-/ - if logged_in?
-/   == slim :'question/_new'
+- if logged_in?
+  == slim :'question/_new'

@@ -1,5 +1,5 @@
 h2 New Question
-- if @question.errors && @question.errors.any?
+- if @question && @question.errors.any?
   == slim :'question/_errors'
 form action='/questions' method='post'
   label Title
