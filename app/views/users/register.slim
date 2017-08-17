@@ -1,20 +1,11 @@
-div
-
-
-
-/ <div class="container">
-/   <h1>Register Account</h1>
-/   <%= erb :'users/errors' if @errors && @errors.any? %>
-/   <form action="/users" method="post">
-/     First Name:<br>
-/     <input type="text" name="user[first_name]"><br>
-/     Last Name:<br>
-/     <input type="text" name="user[last_name]"><br>
-/     Email:<br>
-/     <input type="text" name="user[email]"><br>
-/     Password:<br>
-/     <input type="password" name="user[password]"><br>
-/     <br><br>
-/     <input type="submit" value="Submit">
-/   </form>
-/ </div>
+div class='container'
+  h1 Register Account
+  = slim :'users/errors' if @errors && @errors.any?
+  form action='/register' method='post'
+    label Username
+    input type='text' name='user[username]'
+    label Email
+    input type='text' name='user[email]'
+    label Password
+    input type='password' name='user[password]'
+    input type='submit' value='Register'

@@ -9,11 +9,11 @@ helpers do
 
   def report_create_errors(errors)
     @errors = errors
-    erb :'users/new'
+    slim :'users/register'
   end
 
   def report_login_errors
     @errors = ["Login information does not match."]
-    erb :'users/login'
+    slim :'users/login'
   end
 end
