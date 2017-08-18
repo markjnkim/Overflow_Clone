@@ -1,27 +1,60 @@
+/ Question
 h2 = @question.title
 p = @question.body
+/ Vote on Question
+= "#{@question.tally_votes} votes"
+- if logged_in? && current_user.has_not_voted?(@question.id, "Question")
+    form action="/questions/#{@question.id}/up_vote" method="post"
+      input type="submit" value="Up Vote"
+    form action="/questions/#{@question.id}/down_vote" method="post"
+      input type="submit" value="Down Vote"
+/ Comment on Question
 ul
   -@question.comments.each do |comment|
     li = comment.body
-
+    / Vote on Comment
+    = "#{comment.tally_votes} votes"
+    - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+      form action="/comments/#{comment.id}/up_vote" method="post"
+        input type="submit" value="Up Vote"
+      form action="/comments/#{comment.id}/down_vote" method="post"
+        input type="submit" value="Down Vote"
+/ New Comment on Question
 - if logged_in?
   form action="/questions/#{@question.id}/comments" method='post'
     == slim :'comments/_new'
-
+/ Answers
 ul
   - @question.answers.each do |answer|
     li = answer.text
     - if @question.best_answer == answer
       h3 Best Answer!
+    / Choose Best Answer
     - if @question.user == current_user && @question.best_answer != answer
       form action="/questions/#{@question.id}/best_answer/#{answer.id}" method='post'
         input type="submit" value="Vote Best Answer"
+    / Vote on Answer
+    = "#{answer.tally_votes} votes"
+    - if logged_in? && current_user.has_not_voted?(answer.id, "Answer")
+      form action="/answers/#{answer.id}/up_vote" method="post"
+        input type="submit" value="Up Vote"
+      form action="/answers/#{answer.id}/down_vote" method="post"
+        input type="submit" value="Down Vote"
+    / Comment on Answer
     ul
       - answer.comments.each do |comment|
         li = comment.body
+        / Vote on Comment
+        = "#{comment.tally_votes} votes"
+        - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+          form action="/comments/#{comment.id}/up_vote" method="post"
+            input type="submit" value="Up Vote"
+          form action="/comments/#{comment.id}/down_vote" method="post"
+            input type="submit" value="Down Vote"
+    / New Comment
     - if logged_in?
       form action="/questions/#{@question.id}/answers/#{answer.id}/comments" method='post'
         == slim :'comments/_new'
-
+/ New Answer
 - if logged_in?
   == slim :'answers/_new'

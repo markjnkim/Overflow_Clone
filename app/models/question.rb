@@ -1,6 +1,8 @@
 class Question < ActiveRecord::Base
+  include Voteable
   belongs_to :user
   has_many :answers
+  has_many :votes, as: :voteable
   belongs_to :best_answer, class_name: "Answer", optional: true
   has_many :comment_questions
   has_many :comments, through: :comment_questions
