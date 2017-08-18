@@ -1,0 +1,21 @@
+nav.navbar.navbar-dark.bg-dark
+  a.navbar-brand href="/questions"  EMA Overflow
+  button.navbar-toggler aria-controls="navbarsExample01" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarsExample01" data-toggle="collapse" type="button"
+    span.navbar-toggler-icon
+  #navbarsExample01.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item
+        - if logged_in?
+          a.nav-link href="/users/#{current_user.id}"
+            = current_user.username
+        - else
+          a.nav-link href="/register"
+            | Register
+      li.nav-item
+        - if logged_in?
+          form action='/logout' method='post'
+            button type='submit' class='btn btn-link navbar-btn navbar-link btn-logout'
+              | Logout
+        - else
+          a.nav-link href="/login"
+            | Login
