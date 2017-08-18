@@ -2,6 +2,7 @@ ul
   - @questions.each do |question|
     li
       = "#{question.answers.count} answers"
+      = "#{question.tally_votes} votes"
       a[href="/questions/#{question.id}"] = question.title
 
 - if logged_in?

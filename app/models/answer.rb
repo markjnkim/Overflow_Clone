@@ -1,4 +1,5 @@
 class Answer < ActiveRecord::Base
+  include Voteable
   # Remember to create a migration!
   belongs_to :user
   belongs_to :question

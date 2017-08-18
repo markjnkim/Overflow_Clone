@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   has_many :questions
   has_many :answers
+  has_many :votes
 
   def password_present
     @errors.add(:password, 'cannot be blank') if self.password == ''
@@ -28,4 +29,10 @@ class User < ActiveRecord::Base
     user = self.find_by(username: username)
     return user if user && user.password == plain_text_password
   end
+
+  def has_not_voted?(id, type)
+    self.votes.select { |vote| vote.voteable_id == id && vote.voteable_type == type }.empty?
+  end
 end
+
+
