@@ -1,3 +1,7 @@
+get '/' do
+  redirect '/questions'
+end
+
 #index
 get '/questions' do
   @questions = Question.all

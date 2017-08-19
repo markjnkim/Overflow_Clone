@@ -1,60 +1,87 @@
 / Question
-h2 = @question.title
-p = @question.body
-/ Vote on Question
-= "#{@question.tally_votes} votes"
-- if logged_in? && current_user.has_not_voted?(@question.id, "Question")
-    form action="/questions/#{@question.id}/up_vote" method="post"
-      input type="submit" value="Up Vote"
-    form action="/questions/#{@question.id}/down_vote" method="post"
-      input type="submit" value="Down Vote"
+div.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.pad-t-1.bg-white.relative.h-min-6
+  div.absolute.left-0px.width-50px.pad-s-1.top-50
+    - if logged_in? && current_user.has_not_voted?(@question.id, "Question")
+      form action="/questions/#{@question.id}/up_vote" method="post"
+        input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
+    span.pad-5px.round-1.bg-slk-gray.mar-l-3px = "#{@question.tally_votes}"
+    - if logged_in? && current_user.has_not_voted?(@question.id, "Question")
+      form action="/questions/#{@question.id}/down_vote" method="post"
+        input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"
+  div.margin-left-50px
+    h2.font-2.c-forest = @question.title
+    p.c-marine = @question.body
+  / Vote on Question
+  p
+    div.margin-left-50px
+      span.pad-5px.round-1.bg-slk-gray = "#{@question.answers.count} answers"
 / Comment on Question
-ul
+ul.no-bullets
   -@question.comments.each do |comment|
-    li = comment.body
-    / Vote on Comment
-    = "#{comment.tally_votes} votes"
-    - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
-      form action="/comments/#{comment.id}/up_vote" method="post"
-        input type="submit" value="Up Vote"
-      form action="/comments/#{comment.id}/down_vote" method="post"
-        input type="submit" value="Down Vote"
+    li.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-lt-gray.relative.h-min-6
+      / Vote on Comment
+      div.absolute.left-0px.width-50px.pad-s-1.top-50
+        - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+          form action="/comments/#{comment.id}/up_vote" method="post"
+            input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
+        span.pad-5px.round-1.bg-slk-gray.mar-l-3px = "#{comment.tally_votes}"
+        - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+          form action="/comments/#{comment.id}/down_vote" method="post"
+            input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"
+      div.margin-left-50px
+        p.c-marine.pad-t-1 = comment.body
 / New Comment on Question
 - if logged_in?
+  - if @comment && @comment.errors.any?
+    ul
+    - @comment.errors.full_messages.each do |error|
+      li = error
   form action="/questions/#{@question.id}/comments" method='post'
     == slim :'comments/_new'
 / Answers
-ul
-  - @question.answers.each do |answer|
-    li = answer.text
-    - if @question.best_answer == answer
-      h3 Best Answer!
-    / Choose Best Answer
-    - if @question.user == current_user && @question.best_answer != answer
-      form action="/questions/#{@question.id}/best_answer/#{answer.id}" method='post'
-        input type="submit" value="Vote Best Answer"
-    / Vote on Answer
-    = "#{answer.tally_votes} votes"
-    - if logged_in? && current_user.has_not_voted?(answer.id, "Answer")
-      form action="/answers/#{answer.id}/up_vote" method="post"
-        input type="submit" value="Up Vote"
-      form action="/answers/#{answer.id}/down_vote" method="post"
-        input type="submit" value="Down Vote"
-    / Comment on Answer
-    ul
-      - answer.comments.each do |comment|
-        li = comment.body
-        / Vote on Comment
-        = "#{comment.tally_votes} votes"
-        - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
-          form action="/comments/#{comment.id}/up_vote" method="post"
-            input type="submit" value="Up Vote"
-          form action="/comments/#{comment.id}/down_vote" method="post"
-            input type="submit" value="Down Vote"
-    / New Comment
-    - if logged_in?
-      form action="/questions/#{@question.id}/answers/#{answer.id}/comments" method='post'
-        == slim :'comments/_new'
+- @question.answers.each do |answer|
+  div.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-white.relative.h-min-6
+    div.absolute.left-0px.width-50px.pad-s-1.top-50
+      / Vote on Answer
+      - if logged_in? && current_user.has_not_voted?(answer.id, "Answer")
+        form action="/answers/#{answer.id}/up_vote" method="post"
+          input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
+      span.pad-5px.round-1.bg-slk-gray.c-white.mar-l-3px = "#{answer.tally_votes}"
+      - if logged_in? && current_user.has_not_voted?(answer.id, "Answer")
+        form action="/answers/#{answer.id}/down_vote" method="post"
+          input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"
+    div.margin-left-50px
+      p.c-marine.pad-t-1 = answer.text
+    div.margin-left-50px
+      - if @question.best_answer == answer
+        img src="/recommended (2).png" alt="Best Answer"
+      / Choose Best Answer
+      - if @question.user == current_user && @question.best_answer != answer
+        form action="/questions/#{@question.id}/best_answer/#{answer.id}" method='post'
+          input type="image" src="/recommended (1).png" value="Vote Best Answer" alt="Vote Best Answer"
+  / Comment on Answer
+  ul.no-bullets
+    - answer.comments.each do |comment|
+      li.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-lt-gray.relative.h-min-6
+        div.absolute.left-0px.width-50px.pad-s-1.top-50
+          / Vote on Comment
+          - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+            form action="/comments/#{comment.id}/up_vote" method="post"
+              input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
+          span.pad-5px.round-1.bg-slk-gray.c-white.mar-l-3px = "#{comment.tally_votes}"
+          - if logged_in? && current_user.has_not_voted?(comment.id, "Comment")
+            form action="/comments/#{comment.id}/down_vote" method="post"
+              input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"
+        div.margin-left-50px
+          p.c-marine.pad-t-1 = comment.body
+  / New Comment
+  - if logged_in?
+    - if @comment && @comment.errors.any?
+      ul
+      - @comment.errors.full_messages.each do |error|
+        li = error
+    form action="/questions/#{@question.id}/answers/#{answer.id}/comments" method='post'
+      == slim :'comments/_new'
 / New Answer
 - if logged_in?
   == slim :'answers/_new'

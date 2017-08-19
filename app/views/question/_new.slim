@@ -1,9 +1,8 @@
-h2 New Question
+h2.block.button.w-100.mar-t-2.mar-b-3.pad-1.round-1.text-c.center New Question
 - if @question && @question.errors.any?
   == slim :'question/_errors'
 form action='/questions' method='post'
-  label Title
-  input type='text' name='question[title]'
-  label Details
-  input type='text' name='question[body]'
-  input type='submit' value='Post'
+  input type='text' name='question[title]' placeholder='Question' class="block w-100 no-outline no-border pad-1 mar-b-2"
+  textarea wrap='soft' rows='14' cols='11' name='question[body]' placeholder='Details' class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2"
+  input.block.button.w-100.mar-t-2.mar-b-3.pad-1.round-1.text-c.center.no-border type='submit' value='Post'
+
