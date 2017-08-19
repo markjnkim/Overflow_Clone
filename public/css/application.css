@@ -442,4 +442,9 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   font: 700 60px 'Bitter';
   font-size: 3vw;
 }
-
+.hidden-question {
+  display: none;
+}
+.hidden-answer {
+  display: none;
+}

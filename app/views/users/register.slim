@@ -1,11 +1,10 @@
 div class='container'
-  h1 Register Account
+  div.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.bg-white.relative.h-min-6
+    h2.c-marine.text-c.embossed Register Account
+  br
   == slim :'users/_errors' if @errors && @errors.any?
   form action='/register' method='post'
-    label Username
-    input type='text' name='user[username]'
-    label Email
-    input type='text' name='user[email]'
-    label Password
-    input type='password' name='user[password]'
-    input type='submit' value='Register'
+    input.inset-box-shadow type='text' name='user[username]' placeholder='Username' class="block w-100 no-outline no-border pad-1 mar-b-2"
+    input.inset-box-shadow type='text' name='user[email]' placeholder='Email' class="block w-100 no-outline no-border pad-1 mar-b-2"
+    input.inset-box-shadow type='password' name='user[password]' placeholder='Password' class="block w-100 no-outline no-border pad-1 mar-b-2"
+    input.block.button.w-100.mar-t-2.mar-b-3.pad-1.round-1.text-c.center.no-border type='submit' value='Register'

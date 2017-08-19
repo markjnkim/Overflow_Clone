@@ -11,7 +11,10 @@
   form action="/questions/#{@question.id}/comments" method='post'
     == slim :'comments/_new'
 / Answers
-== slim :'answers/_show_all'
+div.answers
+  - @question.answers.each do |answer|
+    -@answer = answer
+    == slim :'answers/_show'
 
 / New Answer
 - if logged_in?

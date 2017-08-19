@@ -1,7 +1,28 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $('.new-question').click(function() {
+    $('.hidden-question').slideToggle()
+  })
+  $('.new-answer').click(function() {
+    $('.hidden-answer').slideToggle()
+  })
+  $('.submit-answer').on('submit', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+      data: $(this).serialize(),
+    })
+    request.done(function(data) {
+      $('div.answers').append(data)
+      $('.hidden-answer').slideToggle()
+    })
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+    request.fail(function() {
+      alert('Answers must contain text in the body.')
+    })
+    this.reset()
+
+
+  })
 });
