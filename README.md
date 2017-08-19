@@ -2,7 +2,7 @@ TEAM NAME:
   - EMA
 
 TEAM MEMBERS:
-  - Alexist Deruyter
+  - Alexis DeRuyter
   - Mark Kim
   - Emmet Mahdavi
 
