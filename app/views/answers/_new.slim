@@ -1,7 +1,7 @@
 - if @answer && @answer.errors.any?
   == slim :'answers/_errors'
 form action="/questions/#{@question.id}/answers" method="post"
-  textarea name="answer[text]" placeholder='Answer' wrap='soft' rows='14' cols='11' class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2"
+  textarea.inset-box-shadow name="answer[text]" placeholder='Answer' wrap='soft' rows='14' cols='11' class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2"
   input.block.button.w-100.mar-t-2.mar-b-3.pad-1.round-1.text-c.center.no-border type='submit' value='Answer'
 
 

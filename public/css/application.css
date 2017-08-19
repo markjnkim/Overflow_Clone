@@ -74,14 +74,37 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   left: 0px;
 }
 
+.right-0px {
+  right: 0px;
+}
+
 .width-50px {
   width: 50px;
+}
+
+.width-100px {
+  width: 100px;
+}
+
+.width-400px {
+  width: 400px;
 }
 
 .margin-left-50px {
   margin-left: 50px;
 }
 
+.bottom-20 {
+  bottom: 20px;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
 
 /* formatting */
 .bg-absolute {
@@ -137,8 +160,16 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.66);
 }
 
+.inset-box-shadow {
+  box-shadow: inset 5px 5px 29px -4px rgba(0,0,0,0.75);
+}
+
 .c-dk-green {
   color: #05724f;
+}
+
+.c-slk-gray {
+  color: #A5A5AF;
 }
 
 .c-eggplant {
@@ -204,6 +235,10 @@ input[type=text], input[type=password], input[type=textarea], textarea {
 
 .mar-l-3px {
   margin-left: 3px;
+}
+
+.mar-r-5px {
+  margin-right: 5px;
 }
 
 .mar-b-1 {

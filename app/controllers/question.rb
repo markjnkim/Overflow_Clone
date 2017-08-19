@@ -4,7 +4,7 @@ end
 
 #index
 get '/questions' do
-  @questions = Question.all
+  @questions = Question.includes(:votes).all
   slim :'question/index'
 end
 
@@ -16,7 +16,7 @@ end
 
 #show
 get '/questions/:id' do
-  @question = Question.find(params[:id])
+  @question = Question.includes(:votes).find(params[:id])
   slim :'question/show'
 end
 

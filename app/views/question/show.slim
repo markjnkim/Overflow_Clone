@@ -13,8 +13,11 @@ div.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.pad-t-1.bg-white.relative.h-min-6
     p.c-marine = @question.body
   / Vote on Question
   p
-    div.margin-left-50px
-      span.pad-5px.round-1.bg-slk-gray = "#{@question.answers.count} answers"
+    div.margin-left-50px.bottom-20
+      span.pad-5px.round-1.bg-slk-gray.float-l = "#{@question.answers.count} answers"
+      span.pad-5px.round-1.bg-slk-gray.float-r = "#{@question.user.username}"
+      | &nbsp;
+      span.pad-5px.round-1.bg-slk-gray.float-r = "#{@question.created_at.to_date}"
 / Comment on Question
 ul.no-bullets
   -@question.comments.each do |comment|
