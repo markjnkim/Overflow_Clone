@@ -43,3 +43,928 @@ Call stack
   /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-5:in `__tilt_70254685271900'
   /Users/apprentice/ema_overflow/app/controllers/users.rb:36:in `block in <top (required)>'
 
+2017-08-18 20:44:48[WARN] user: apprentice
+GET http://localhost:9393/questions/1
+AVOID eager loading detected
+  Question => [:votes]
+  Remove from your finder: :includes => [:votes]
+Call stack
+
+2017-08-18 20:45:28[WARN] user: apprentice
+GET http://localhost:9393/questions/1
+AVOID eager loading detected
+  Question => [:votes]
+  Remove from your finder: :includes => [:votes]
+Call stack
+
+2017-08-18 20:45:50[WARN] user: apprentice
+GET http://localhost:9393/questions/1
+AVOID eager loading detected
+  Question => [:votes]
+  Remove from your finder: :includes => [:votes]
+Call stack
+
+2017-08-18 21:03:52[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:10:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247693085940'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:04:27[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:10:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247693085940'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:05:35[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:10:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247684137160'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:06:00[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:10:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247684137160'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:08:40[WARN] user: apprentice
+GET http://localhost:9393/questions
+AVOID eager loading detected
+  Question => [:votes]
+  Remove from your finder: :includes => [:votes]
+Call stack
+
+2017-08-18 21:10:04[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_bar.slim:9:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_bar.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_bar.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_bar.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_bar.slim:-5:in `__tilt_70247693084020'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247693084020'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:11:50[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:9:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-5:in `__tilt_70247684547560'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247684547560'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:12:21[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:9:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-5:in `__tilt_70247684547560'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247684547560'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:19:09[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:9:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 21:19:18[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:38:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:31:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:19:18[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:52:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:31:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:19:18[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:57:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:31:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:19:18[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:57:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:31:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684548400'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:20:50[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:22:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692467820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:20:50[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:36:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692467820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:20:50[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:41:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692467820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:20:50[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:41:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692467820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:24:39[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:22:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693167720'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:24:39[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:36:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693167720'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:24:39[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:41:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693167720'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:24:39[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:41:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:15:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693167720'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:28:21[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:8:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684924840'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684924840'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:28:21[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:22:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684924840'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684924840'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:30:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247688625820'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688625820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688625820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:30:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:16:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688625820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688625820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:32:31[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:32:31[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:32:31[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:23:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:32:31[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:23:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247692449420'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:34:02[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:34:28[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:34:28[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:12:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:34:28[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:17:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:34:28[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:17:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693334580'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:36:30[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:36:55[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:36:55[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:13:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:36:55[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:17:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:36:55[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:17:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247693067820'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:39:19[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:39:19[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:13:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:39:19[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:39:19[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247688490360'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:40:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:40:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:13:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:40:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:40:41[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247684041200'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:41:32[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:4:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/votes/_answer.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:5:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:41:32[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:13:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:41:32[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:answer_comments]
+  Add to your finder: :includes => [:answer_comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:41:32[WARN] user: apprentice
+GET http://localhost:9393/questions/7
+USE eager loading detected
+  Answer => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/comments/_answer.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:18:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/answers/_show_all.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:14:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/show.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:20:in `block in <top (required)>'
+
+2017-08-18 21:41:44[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:9:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:1:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/_display_question_list.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70247696704040'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+

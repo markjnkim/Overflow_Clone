@@ -1,11 +1,5 @@
 div.container
-  - @questions.each do |question|
-    p.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.bg-white
-      a.font-2[href="/questions/#{question.id}"] = question.title
-      br
-      span.pad-5px.round-1.bg-slk-gray = "#{question.answers.count} Answers"
-      | &nbsp;
-      span.pad-5px.round-1.bg-slk-gray = "#{question.tally_votes} Votes"
+  == slim :'question/_display_question_list'
 
   - if logged_in?
     == slim :'question/_new'

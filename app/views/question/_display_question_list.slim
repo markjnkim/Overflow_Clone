@@ -1,0 +1,11 @@
+- @questions.each do |question|
+  div.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.bg-white.relative.h-min-6
+    div
+      a.font-2[href="/questions/#{question.id}"] = question.title
+    div.bottom-20
+      span.pad-5px.round-1.bg-slk-gray.float-l = "#{question.answers.count} Answers"
+      | &nbsp;
+      span.pad-5px.round-1.bg-slk-gray.float-l = "#{question.tally_votes} Votes"
+      span.pad-5px.round-1.bg-slk-gray.float-r = "#{question.user.username}"
+      | &nbsp;
+      span.pad-5px.round-1.bg-slk-gray.float-r = "#{question.created_at.strftime('%b %d, %Y')}"
