@@ -212,6 +212,10 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   font-size: 2em;
 }
 
+.font-4 {
+  font-size: 4em;
+}
+
 .font-3-4{
   font-size: .75em;
 }
@@ -423,3 +427,19 @@ input[type=text], input[type=password], input[type=textarea], textarea {
 .logo {
   width:160px;
 }
+
+.credits {
+  color: white;
+}
+
+.credits:hover {
+  color: white;
+}
+
+.embossed {
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  opacity: 0.4;
+  font: 700 60px 'Bitter';
+  font-size: 3vw;
+}
+

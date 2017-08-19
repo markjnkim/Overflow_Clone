@@ -1,7 +1,7 @@
-h1 = "Welcome, #{current_user.username}! (>^.^)> "
+div.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.bg-white.relative.h-min-6
+  h2.c-marine.text-c.embossed = "Welcome, #{current_user.username}! (>^.^)> "
 div class='users-questions'
   - if current_user.questions.any?
-    h2 Your Questions:
     - @questions = current_user.questions.includes(:votes)
     == slim :'question/_display_question_list'
 
