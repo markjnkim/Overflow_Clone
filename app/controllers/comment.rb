@@ -4,7 +4,7 @@ post '/questions/:question_id/comments' do
                             user: current_user,
                             question: @question)
   if @comment.errors.any?
-    slim :'/questions/show'
+    slim :'question/show'
   else
     redirect "/questions/#{@question.id}"
   end
@@ -17,7 +17,7 @@ post '/questions/:question_id/answers/:answer_id/comments' do
                             user: current_user,
                             answer: @answer)
   if @comment.errors.any?
-    slim :'/questions/show'
+    slim :'/question/show'
   else
     redirect "/questions/#{@question.id}"
   end

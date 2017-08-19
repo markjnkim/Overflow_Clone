@@ -1,9 +1,14 @@
 h1 = "Welcome, #{current_user.username}! (>^.^)> "
 div class='users-questions'
-  a id='new-question' href='/questions/new' New Question
+  / a id='new-question' href='/questions/new' New Question
   - if current_user.questions.any?
     h2 Your Questions:
-    - current_user.questions.each do |question|
-      li
-        a href="/questions/#{question.id}" = question.title
+    - current_user.questions.includes(:votes).each do |question|
+      p.mar-t-2.box-shadow.round-1.pad-s-1.pad-b-1.bg-white
+        a.font-2[href="/questions/#{question.id}"] = question.title
+        br
+        span.pad-5px.round-1.bg-slk-gray = "#{question.answers.count} Answers"
+        | &nbsp;
+        span.pad-5px.round-1.bg-slk-gray = "#{question.tally_votes} Votes"
 
+== slim :'question/_new'

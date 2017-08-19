@@ -29,3 +29,5 @@ group :test, :development do
   gem 'faker'
   gem 'pry-byebug'
 end
+
+gem 'bullet', require: false

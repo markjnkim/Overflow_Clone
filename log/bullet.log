@@ -1,0 +1,45 @@
+2017-08-18 17:57:39[WARN] user: apprentice
+GET http://localhost:9393/questions
+USE eager loading detected
+  Question => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:8:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:2:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/question/index.slim:-5:in `__tilt_70358980970540'
+  /Users/apprentice/ema_overflow/app/controllers/question.rb:8:in `block in <top (required)>'
+
+2017-08-18 18:35:58[WARN] user: apprentice
+GET http://localhost:9393/users/3
+USE eager loading detected
+  Question => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:12:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:6:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-5:in `__tilt_70254688705740'
+  /Users/apprentice/ema_overflow/app/controllers/users.rb:36:in `block in <top (required)>'
+
+2017-08-18 18:37:26[WARN] user: apprentice
+GET http://localhost:9393/users/3
+USE eager loading detected
+  Question => [:votes]
+  Add to your finder: :includes => [:votes]
+Call stack
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `reduce'
+  /Users/apprentice/ema_overflow/app/helpers/voteable.rb:3:in `tally_votes'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:12:in `block (2 levels) in singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:6:in `block in singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-2:in `instance_eval'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-2:in `singleton class'
+  /Users/apprentice/ema_overflow/app/views/users/user_profile.slim:-5:in `__tilt_70254685271900'
+  /Users/apprentice/ema_overflow/app/controllers/users.rb:36:in `block in <top (required)>'
+
