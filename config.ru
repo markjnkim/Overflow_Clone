@@ -6,11 +6,11 @@ set :app_file, __FILE__
 run Sinatra::Application
 
 
-require 'bullet'
+# require 'bullet'
 
-Bullet.enable = true
-Bullet.alert = true
-Bullet.bullet_logger = true
-Bullet.console = true
+# Bullet.enable = true
+# Bullet.alert = true
+# Bullet.bullet_logger = true
+# Bullet.console = true
 
-use Bullet::Rack
+# use Bullet::Rack

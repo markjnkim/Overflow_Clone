@@ -30,4 +30,4 @@ group :test, :development do
   gem 'pry-byebug'
 end
 
-gem 'bullet', require: false
+# gem 'bullet', require: false

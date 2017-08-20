@@ -46,7 +46,7 @@ $(document).ready(function() {
     })
 
     request.done(function(data) {
-      $('div.question-container#' + answerID).find('.q-comments').append(data)
+      $('.q-comments').append(data)
       $('.q-comment-form').slideToggle()
     })
 
@@ -73,10 +73,8 @@ $(document).ready(function() {
     })
 
     request.done(function(data) {
-      console.log(data)
       var answerID = data['id']
       var content = data['content']
-      var container = $('div#' + answerID)
       $('div#' + answerID).find('.answer-comments').append(content)
       $('div#' + answerID).find('.comment-form').slideToggle()
     })
@@ -85,5 +83,134 @@ $(document).ready(function() {
       alert("Comment can't be blank")
     })
     this.reset()
+  })
+
+  $('.q-up').on('submit', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      $('.q-vote-count').text(data['count'])
+      $('.q-up').hide()
+      $('.q-down').hide()
+    })
+  })
+
+  $('.q-down').on('submit', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      $('.q-vote-count').text(data['count'])
+      $('.q-up').hide()
+      $('.q-down').hide()
+    })
+  })
+
+  $('.question-container').on('submit', '.c-up', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      var commentID = data['id']
+      $('div#' + commentID).find('.c-vote-count').text(data['count'])
+      $('div#' + commentID).find('.c-up').hide()
+      $('div#' + commentID).find('.c-down').hide()
+    })
+  })
+
+  $('.question-container').on('submit', '.c-down', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      var commentID = data['id']
+      $('div#' + commentID).find('.c-vote-count').text(data['count'])
+      $('div#' + commentID).find('.c-up').hide()
+      $('div#' + commentID).find('.c-down').hide()
+    })
+  })
+
+  $('.question-container').on('submit', '.a-up', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      var answerID = data['id']
+      $('div#' + answerID).find('.a-vote-count').text(data['count'])
+      $('div#' + answerID).find('.a-up').hide()
+      $('div#' + answerID).find('.a-down').hide()
+    })
+  })
+
+  $('.question-container').on('submit', '.a-down', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      var answerID = data['id']
+      $('div#' + answerID).find('.a-vote-count').text(data['count'])
+      $('div#' + answerID).find('.a-up').hide()
+      $('div#' + answerID).find('.a-down').hide()
+    })
+  })
+
+  $('.question-container').on('submit', '.best-answer', function(event) {
+    event.preventDefault()
+    var post_path = $(this).attr('action')
+    var request = $.ajax({
+      method: 'POST',
+      url: post_path,
+    })
+
+    request.done(function(data) {
+      answerID = data['id']
+      var img = $('<img />', {
+        class: 'current-best',
+        src: "/recommended (2).png",
+        alt: "Best Answer",
+      })
+      // old current Best Answer
+      var form = $('<form />', {
+        class: 'best-answer',
+        action: '/questions/' + $('div.question-container').attr('id') + '/best_answer/' + $('img.current-best').closest('div.answer-container').attr('id'),
+        method: 'post',
+      })
+      var input = $('<input />', {
+        type: 'image',
+        src: '/recommended (1).png',
+        value: 'Vote Best Answer',
+        alt: 'Vote Best Answer',
+      })
+      form.append(input)
+      $('img.current-best').closest('span').append(form)
+      $('img.current-best').remove()
+      $('div.answer-container#' + answerID).find('.best-answer').remove()
+      $('div.answer-container#' + answerID).find('.best-span').append(img)
+    })
   })
 });
