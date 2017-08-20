@@ -130,6 +130,12 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   /*background-color: #A7D2CB*/
   background: linear-gradient(to right, #A7D2CB, #47ccb6);
 }
+.q-comment:hover {
+  background: linear-gradient(to right, #47ccb6, #A7D2CB);
+}
+.a-comment:hover {
+  background: linear-gradient(to right, #47ccb6, #A7D2CB);
+}
 
 .bg-white {
   background-color: #F5F5F5;
@@ -150,11 +156,11 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   text-decoration: none;
 }
 
-  .button:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #A7D2CB;
-  }
+.button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #A7D2CB;
+}
 
 .box-shadow {
   box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.66);
@@ -446,5 +452,9 @@ input[type=text], input[type=password], input[type=textarea], textarea {
   display: none;
 }
 .hidden-answer {
+  display: none;
+}
+
+.comment-form {
   display: none;
 }

@@ -4,7 +4,7 @@ h2.block.button.w-100.mar-t-2.mar-b-3.pad-1.round-1.text-c.center.new-question N
   == slim :'question/_errors'
 
 form.hidden-question action='/questions' method='post'
-  input.inset-box-shadow type='text' name='question[title]' placeholder='Question' class="block w-100 no-outline no-border pad-1 mar-b-2"
+  input.inset-box-shadow.title type='text' name='question[title]' placeholder='Question' class="block w-100 no-outline no-border pad-1 mar-b-2"
 
   textarea.inset-box-shadow wrap='soft' rows='14' cols='11' name='question[body]' placeholder='Details' class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2"
 
