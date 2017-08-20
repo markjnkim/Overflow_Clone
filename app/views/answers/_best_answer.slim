@@ -1,7 +1,7 @@
-span.pad-5px.float-l
+span.pad-5px.float-l.best-span
   - if @question.best_answer == @answer
-    img src="/recommended (2).png" alt="Best Answer"
+    img.current-best src="/recommended (2).png" alt="Best Answer"
 
   - if @question.user == current_user && @question.best_answer != @answer
-    form action="/questions/#{@question.id}/best_answer/#{@answer.id}" method='post'
+    form.best-answer action="/questions/#{@question.id}/best_answer/#{@answer.id}" method='post'
       input type="image" src="/recommended (1).png" value="Vote Best Answer" alt="Vote Best Answer"

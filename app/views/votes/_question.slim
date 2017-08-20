@@ -1,10 +1,10 @@
 div.absolute.left-0px.width-50px.pad-s-1.top-50
   - if logged_in? && current_user.has_not_voted?(@question.id, "Question")
-    form action="/questions/#{@question.id}/up_vote" method="post"
+    form.q-up action="/questions/#{@question.id}/up_vote" method="post"
       input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
 
-  span.pad-5px.round-1.bg-slk-gray.mar-l-3px = "#{@question.tally_votes}"
+  span.pad-5px.round-1.bg-slk-gray.mar-l-3px.q-vote-count = "#{@question.tally_votes}"
 
   - if logged_in? && current_user.has_not_voted?(@question.id, "Question")
-    form action="/questions/#{@question.id}/down_vote" method="post"
+    form.q-down action="/questions/#{@question.id}/down_vote" method="post"
       input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"

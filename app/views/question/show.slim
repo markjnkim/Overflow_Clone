@@ -1,21 +1,26 @@
-/ Question
-== slim :'question/_display_full_question'
-/ Comment on Question
-== slim :'comments/_question'
-/ New Comment on Question
-- if logged_in?
-  - if @comment && @comment.errors.any?
-    ul
-    - @comment.errors.full_messages.each do |error|
-      li = error
-  form action="/questions/#{@question.id}/comments" method='post'
-    == slim :'comments/_new'
-/ Answers
-div.answers
-  - @question.answers.each do |answer|
-    -@answer = answer
-    == slim :'answers/_show'
+div.question-container id="#{@question.id}"
+  / Question
+  == slim :'question/_display_full_question'
+  / New Comment on Question
+  - if logged_in?
+    - if @comment && @comment.errors.any?
+      ul
+      - @comment.errors.full_messages.each do |error|
+        li = error
+    form.comment-form.q-comment-form action="/questions/#{@question.id}/comments" method='post'
+      br
+      == slim :'comments/_new'
+  / Comment on Question
+  ul.no-bullets.q-comments
+    - @question.comments.each do |comment|
+      - @comment = comment
+      == slim :'comments/_question'
+  / Answers
+  div.answers
+    - @question.answers.each do |answer|
+      -@answer = answer
+      == slim :'answers/_show'
 
-/ New Answer
-- if logged_in?
-  == slim :'answers/_new'
+  / New Answer
+  - if logged_in?
+    == slim :'answers/_new'

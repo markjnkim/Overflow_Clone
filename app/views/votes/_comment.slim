@@ -1,8 +1,8 @@
-div.absolute.left-0px.width-50px.pad-s-1.top-50
+div.absolute.left-0px.width-50px.pad-s-1.top-50 id="#{@comment.id}"
   - if logged_in? && current_user.has_not_voted?(@comment.id, "Comment")
-    form action="/comments/#{@comment.id}/up_vote" method="post"
+    form.c-up action="/comments/#{@comment.id}/up_vote" method="post"
       input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
-  span.pad-5px.round-1.bg-slk-gray.mar-l-3px = "#{@comment.tally_votes}"
+  span.pad-5px.round-1.bg-slk-gray.mar-l-3px.c-vote-count = "#{@comment.tally_votes}"
   - if logged_in? && current_user.has_not_voted?(@comment.id, "Comment")
-    form action="/comments/#{@comment.id}/down_vote" method="post"
+    form.c-down action="/comments/#{@comment.id}/down_vote" method="post"
       input.mar-t-8px type="image" src="/sort-down.png" value="Down Vote" alt="Down Vote"

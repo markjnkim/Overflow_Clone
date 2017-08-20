@@ -1,13 +1,10 @@
-ul.no-bullets
-  - @answer.comments.each do |comment|
-    li.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-lt-gray.relative.h-min-6
-      - @comment = comment
-      == slim :'votes/_comment'
+li.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-lt-gray.relative.h-min-6
+  == slim :'votes/_comment'
 
-      div.margin-left-50px
-        p.c-marine.pad-t-1 = comment.body
+  div.margin-left-50px
+    p.c-marine.pad-t-1 = @comment.body
 
-      div.margin-left-50px.bottom-20
-        span.pad-5px.round-1.bg-slk-gray.float-r = "#{comment.user.username}"
-        | &nbsp;
-        span.pad-5px.round-1.bg-slk-gray.float-r = "#{comment.created_at.strftime('%b %d, %Y')}"
+  div.margin-left-50px.bottom-20
+    span.pad-5px.round-1.bg-slk-gray.float-r = "#{@comment.user.username}"
+    | &nbsp;
+    span.pad-5px.round-1.bg-slk-gray.float-r = "#{@comment.created_at.strftime('%b %d, %Y')}"
