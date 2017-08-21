@@ -1,6 +1,6 @@
-div.answer-container id="#{@answer.id}"
+div.answer-container id="answer-#{@answer.id}"
   div.mar-t-1.box-shadow.round-1.pad-s-1.pad-b-1.bg-white.relative.h-min-6
-    div.absolute.left-0px.width-50px.pad-s-1.top-50 id="#{@answer.id}"
+    div.absolute.left-0px.width-50px.pad-s-1.top-50
       == slim :'votes/_answer'
 
     div.margin-left-50px
@@ -10,7 +10,7 @@ div.answer-container id="#{@answer.id}"
       == slim :'answers/_best_answer'
       - if logged_in?
         | &nbsp;
-        span.pad-5px.round-1.bg-clean.float-l.a-comment Comment
+        span.pad-5px.round-1.bg-clean.float-l.a-comment.comment-bubble
       span.pad-5px.round-1.bg-slk-gray.float-r = "#{@answer.user.username}"
       | &nbsp;
       span.pad-5px.round-1.bg-slk-gray.float-r = "#{@answer.created_at.strftime('%b %d, %Y')}"

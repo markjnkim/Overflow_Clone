@@ -1,4 +1,4 @@
-div.absolute.left-0px.width-50px.pad-s-1.top-50 id="#{@comment.id}"
+div.absolute.left-0px.width-50px.pad-s-1.top-50 id="comment-#{@comment.id}"
   - if logged_in? && current_user.has_not_voted?(@comment.id, "Comment")
     form.c-up action="/comments/#{@comment.id}/up_vote" method="post"
       input type="image" src="/sort-up.png" value="Up Vote" alt="Up Vote"
