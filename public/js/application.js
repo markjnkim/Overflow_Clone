@@ -75,8 +75,8 @@ $(document).ready(function() {
     request.done(function(data) {
       var answerID = data['id']
       var content = data['content']
-      $('div#' + answerID).find('.answer-comments').append(content)
-      $('div#' + answerID).find('.comment-form').slideToggle()
+      $('div#answer-' + answerID).find('.answer-comments').append(content)
+      $('div#answer-' + answerID).find('.comment-form').slideToggle()
     })
 
     request.fail(function() {
@@ -125,9 +125,9 @@ $(document).ready(function() {
 
     request.done(function(data) {
       var commentID = data['id']
-      $('div#' + commentID).find('.c-vote-count').text(data['count'])
-      $('div#' + commentID).find('.c-up').hide()
-      $('div#' + commentID).find('.c-down').hide()
+      $('div#comment-' + commentID).find('.c-vote-count').text(data['count'])
+      $('div#comment-' + commentID).find('.c-up').hide()
+      $('div#comment-' + commentID).find('.c-down').hide()
     })
   })
 
@@ -141,9 +141,9 @@ $(document).ready(function() {
 
     request.done(function(data) {
       var commentID = data['id']
-      $('div#' + commentID).find('.c-vote-count').text(data['count'])
-      $('div#' + commentID).find('.c-up').hide()
-      $('div#' + commentID).find('.c-down').hide()
+      $('div#comment-' + commentID).find('.c-vote-count').text(data['count'])
+      $('div#comment-' + commentID).find('.c-up').hide()
+      $('div#comment-' + commentID).find('.c-down').hide()
     })
   })
 
@@ -157,9 +157,9 @@ $(document).ready(function() {
 
     request.done(function(data) {
       var answerID = data['id']
-      $('div#' + answerID).find('.a-vote-count').text(data['count'])
-      $('div#' + answerID).find('.a-up').hide()
-      $('div#' + answerID).find('.a-down').hide()
+      $('div#answer-' + answerID).find('.a-vote-count').text(data['count'])
+      $('div#answer-' + answerID).find('.a-up').hide()
+      $('div#answer-' + answerID).find('.a-down').hide()
     })
   })
 
@@ -173,9 +173,9 @@ $(document).ready(function() {
 
     request.done(function(data) {
       var answerID = data['id']
-      $('div#' + answerID).find('.a-vote-count').text(data['count'])
-      $('div#' + answerID).find('.a-up').hide()
-      $('div#' + answerID).find('.a-down').hide()
+      $('div#answer-' + answerID).find('.a-vote-count').text(data['count'])
+      $('div#answer-' + answerID).find('.a-up').hide()
+      $('div#answer-' + answerID).find('.a-down').hide()
     })
   })
 
@@ -189,6 +189,10 @@ $(document).ready(function() {
 
     request.done(function(data) {
       answerID = data['id']
+      var oldBestAnswerID = function() {
+        var full = $('img.current-best').closest('div.answer-container').attr('id')
+        return full.split('').slice(7, full.length).join('')
+      }
       var img = $('<img />', {
         class: 'current-best',
         src: "/recommended (2).png",
@@ -197,7 +201,7 @@ $(document).ready(function() {
       // old current Best Answer
       var form = $('<form />', {
         class: 'best-answer',
-        action: '/questions/' + $('div.question-container').attr('id') + '/best_answer/' + $('img.current-best').closest('div.answer-container').attr('id'),
+        action: '/questions/' + $('div.question-container').attr('id') + '/best_answer/' + oldBestAnswerID(),
         method: 'post',
       })
       var input = $('<input />', {
@@ -209,8 +213,8 @@ $(document).ready(function() {
       form.append(input)
       $('img.current-best').closest('span').append(form)
       $('img.current-best').remove()
-      $('div.answer-container#' + answerID).find('.best-answer').remove()
-      $('div.answer-container#' + answerID).find('.best-span').append(img)
+      $('div.answer-container#answer-' + answerID).find('.best-answer').remove()
+      $('div.answer-container#answer-' + answerID).find('.best-span').append(img)
     })
   })
 });
