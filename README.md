@@ -1,7 +1,7 @@
 # DBC Sinatra Overflow
 
 ## Description
-A simple Stack Overflow clone built on Sinatra. Built with :heart: in collaboration with [Alexis DeRutyer](https://github.com/AlexisDeRutyer) and [Emmet Mahdavi](https://github.com/emmetreza).
+A simple Stack Overflow clone built on Sinatra. Built with :heart: in collaboration with [Alexis DeRutyer](https://github.com/AlexisTDeRutyer) and [Emmet Mahdavi](https://github.com/emmetreza).
 
 ### Details
 * Employs the MVC model.
