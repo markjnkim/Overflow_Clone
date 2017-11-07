@@ -4,8 +4,8 @@
 A simple Stack Overflow clone built on Sinatra. Built with :heart: in collaboration with [Alexis DeRutyer](https://github.com/AlexisTDeRutyer) and [Emmet Mahdavi](https://github.com/emmetreza).
 
 ### Details
-* Employs the MVC model.
-* Makes heavy use of slim templating, jQuery AJAX, and Bootstrap.
+* Employs the MVC model
+* Makes heavy use of slim templating, jQuery AJAX, and Bootstrap
 * ___Ruby Version___: 2.2.2
 * ___Database___: PostgreSQL  
 * ___Dependencies___: BCrypt, Faker, Shotgun
