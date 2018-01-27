@@ -23,3 +23,7 @@ A simple Stack Overflow clone built on Sinatra. Built with :heart: in collaborat
 
 ### Best Answer
 > Included this feature to allow the questionaire to weigh in on the discussion by choosing his or her favorite answer
+
+### Local Server
+> bundle install
+> bundle exec rackup -p 3000
